@@ -54,14 +54,15 @@ class GraphModel: ObservableObject {
 
     // Load pre-set podcasts and hosts
     private func loadInitialData() {
-        let initialData: [[String: Any]] = [
-            ["pod": "TGG", "hosts": ["Ben", "Adam"]],
-            ["pod": "FF", "hosts": ["Ben", "Adam", "Rod"]],
-            ["pod": "RodLine", "hosts": ["Rod", "Merlin"]],
-            ["pod": "FST", "hosts": ["Don", "Chap", "Rod", "Casey"]],
-            ["pod": "DBF", "hosts": ["Don", "Merlin", "John"]],
-            ["pod": "RD", "hosts": ["John", "Merlin"]],
-            ["pod": "ATP", "hosts": ["Marco", "Casey", "John"]]
+        
+    	let initialData: [[String: Any]] = [
+            ["pod": "The Greatest Generation", "hosts": ["Benjamin Harrison", "Adam Pranica"]],
+            ["pod": "Friendly Fire", "hosts": ["Benjamin Harrison", "Adam Pranica", "John Roderick"]],
+            ["pod": "Roderick on the Line", "hosts": ["John Roderick", "Merlin Mann"]],
+            ["pod": "Food Safety Talk", "hosts": ["Don Schaffner", "Benjamin Chapman", "John Roderick", "Casey Liss"]],
+            ["pod": "Do By Friday", "hosts": ["Don Schaffner", "Merlin Mann", "Alex Cox"]],
+            ["pod": "Reconcilable Differences", "hosts": ["John Siracusa", "Merlin Mann"]],
+            ["pod": "ATP", "hosts": ["Marco Arment", "Casey Liss", "John Siracusa"]]
         ]
 
         var hostMap: [String: Node] = [:]
